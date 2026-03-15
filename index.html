@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZedMobiles | Best Phones & Accessories in Zambia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+
+    <!-- Ambient background blobs -->
+    <div class="ambient-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">Zed<span class="highlight">Mobiles</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#featured">Hot Deals</a></li>
+          <li><a href="#shop">All Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-tag">🇿🇲 Zambia's #1 Mobile Store</div>
+        <h1>Upgrade Your<br><span class="hero-accent">Tech</span> Today.</h1>
+        <p>The best deals on iPhones, Samsungs, Tecno, Infinix & accessories in Lusaka & Copperbelt.</p>
+        <div class="hero-btns">
+          <a href="#shop" class="btn primary-btn">Shop Now <span class="btn-arrow">→</span></a>
+          <a href="#contact" class="btn glass-btn">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">scroll</div>
+    </header>
+
+    <main>
+      <!-- TRUST BADGES (above fold) -->
+      <section class="trust-strip">
+        <div class="container trust-grid">
+          <div class="trust-item"><span>🚀</span> Same-Day Delivery</div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span>🛡️</span> 12–24 Month Warranty</div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span>✅</span> 100% Genuine Products</div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span>💬</span> WhatsApp Support</div>
+        </div>
+      </section>
+
+      <!-- HOT DEALS -->
+      <section id="featured" class="section-padding">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">This Week</div>
+            <h2 class="section-title">🔥 Hot Deals</h2>
+          </div>
+          <div id="featured-grid" class="product-grid">
+            <p class="loading">Loading hot deals...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOP -->
+      <section id="shop" class="section-padding shop-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Our Stock</div>
+            <h2 class="section-title">Browse All Products</h2>
+          </div>
+
+          <div class="filters-container glass-card">
+            <div class="filter-group full-width">
+              <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Search e.g. 'iPhone 13' or 'Charger'" />
+              </div>
+            </div>
+            <div class="filter-row">
+              <div class="filter-group">
+                <label>Category</label>
+                <select id="category-filter">
+                  <option value="all">All Categories</option>
+                  <option value="phones">Smartphones</option>
+                  <option value="accessories">Accessories</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label>Brand</label>
+                <select id="brand-filter">
+                  <option value="all">All Brands</option>
+                  <option value="Samsung">Samsung</option>
+                  <option value="Apple">iPhone</option>
+                  <option value="Tecno">Tecno</option>
+                  <option value="Infinix">Infinix</option>
+                  <option value="Xiaomi">Xiaomi</option>
+                  <option value="Oraimo">Oraimo</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label>Max Price (ZMW) — <span id="price-value">ZMW 25,000</span></label>
+                <input type="range" id="price-range" min="0" max="25000" step="100" value="25000" />
+              </div>
+            </div>
+          </div>
+
+          <div id="shop-grid" class="product-grid"></div>
+
+          <div id="no-results" class="hidden no-results-box">
+            <p>No products found. Try changing your filters.</p>
+            <button id="clear-filters" class="btn glass-btn">Clear Filters</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="features-section section-padding">
+        <div class="container feature-grid">
+          <div class="feature-card glass-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery within Lusaka & Kitwe.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Warranty</h3>
+            <p>All brand new phones come with 12–24 months warranty.</p>
+          </div>
+          <div class="feature-card glass-card">
+            <div class="feature-icon">✅</div>
+            <h3>Genuine Tech</h3>
+            <p>100% original products. No fakes. Ever.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section-padding contact-section">
+        <div class="container contact-container">
+          <div class="contact-info glass-card">
+            <div class="section-tag">Get In Touch</div>
+            <h2>Visit Our Shop</h2>
+            <div class="contact-detail"><span>📍</span><p><strong>Location:</strong> Shop 14, City Mall, Kitwe, Zambia</p></div>
+            <div class="contact-detail"><span>📞</span><p><strong>Call:</strong> +260 970 000 000</p></div>
+            <div class="contact-detail"><span>📧</span><p><strong>Email:</strong> sales@zedmobiles.com</p></div>
+            <div class="social-links">
+              <a href="#" class="social-btn whatsapp">💬 WhatsApp</a>
+              <a href="#" class="social-btn facebook">Facebook</a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper glass-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form">
+              <div class="input-group">
+                <input type="text" id="contact-name" placeholder="Your Name" required />
+              </div>
+              <div class="input-group">
+                <input type="tel" id="contact-phone" placeholder="Phone Number" required />
+              </div>
+              <div class="input-group">
+                <textarea id="contact-message" rows="4" placeholder="I'm interested in..." required></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn full-width">Send Message →</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <a href="#" class="logo">Zed<span class="highlight">Mobiles</span></a>
+        <p>© 2026 ZedMobiles. All rights reserved. Kitwe, Zambia.</p>
+      </div>
+    </footer>
+
+    <!-- PRODUCT MODAL -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content glass-card">
+        <button class="close-modal">×</button>
+        <div class="modal-body">
+          <div class="modal-img-wrapper">
+            <img id="modal-img" src="" alt="Product Detail" />
+          </div>
+          <div class="modal-info">
+            <span id="modal-brand" class="badge"></span>
+            <h2 id="modal-title"></h2>
+            <h3 id="modal-price" class="modal-price"></h3>
+            <div class="specs-list" id="modal-specs"></div>
+            <p id="modal-desc"></p>
+            <a href="#" id="modal-whatsapp-btn" target="_blank" class="btn whatsapp-btn-large">
+              💬 Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/260970000000" class="floating-wa" target="_blank" title="Chat on WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
